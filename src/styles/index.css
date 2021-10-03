@@ -1,0 +1,28 @@
+@import url('./fonts.css');
+
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #111418;
+    color: white;
+    font-family: 'DM Sans', serif;
+  }
+
+  * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@layer utilities {
+  .gradient {
+    background: linear-gradient(40.03deg, #4158d0 13.95%, #c850c0 52.48%, #ffcc70 90.22%);
+  }
+  .scroll-snap {
+    scroll-snap-type: y mandatory;
+  }
+  .snap {
+    scroll-snap-align: start;
+  }
+}
